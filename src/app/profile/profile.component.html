@@ -1,0 +1,5 @@
+<div *ngIf="(profile$ | async) as profile">
+    <p>Title : {{ profile.title }}</p>
+    <p>Desciption : {{ profile.description }}</p>
+    <p>Category : {{ profile.category }}</p>
+</div>

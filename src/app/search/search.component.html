@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <input type="text" [formControl]="input">
+
+    <br><br><br>
+
+    <ag-grid-angular
+        style="width: 100%; height: 500px;"
+        class="ag-theme-alpine"
+        [rowData]="records$ | async"
+        [columnDefs]="columnDefs"
+        [frameworkComponents]="frameworkComponents"
+    >
+    </ag-grid-angular>
+
+
+</div>
+
